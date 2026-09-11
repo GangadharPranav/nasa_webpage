@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kage Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kage-container">
+        <header>
+            <span class="status">[KAGE_ACTIVE]</span>
+            <span id="clock">00:00:00</span>
+        </header>
+
+        <div id="screen">
+            <p class="log-dim">SYS_LOAD: Kage design system initialized.</p>
+            <p class="log-dim">Type 'help' for available commands or 'apod' to stream NASA telemetry.</p>
+        </div>
+
+        <div class="prompt-line">
+            <span class="arrow">&gt;</span>
+            <input type="text" id="cmd" autofocus autocomplete="off" spellcheck="false">
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
